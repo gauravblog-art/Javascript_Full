@@ -49,3 +49,28 @@ Return type of variables in JavaScript
        Object  =>  object
 
 */
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Stack(Primitive) and Heap(Non-primitive)
+// In Stack when we creat any veriable in stack and when you will going to change it will change in copy of that variable not actual value but in Heap that will refrance so that will also change in value.
+
+                 // stack
+let state = "mumbai"
+let stateSecound = state
+stateSecound = "delhi"
+console.log(state);
+console.log(stateSecound);
+
+                // heap
+let employeeInfo = {
+    email: "gaurav@google.com",
+    Name:"Gaurav"
+}
+
+
+let employeeInfo1 = employeeInfo
+employeeInfo1.email = "Nandu@google.com";
+console.log(employeeInfo.email);
+console.log(employeeInfo1.email)
+
+
